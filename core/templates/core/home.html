@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% block title %} {{ block.super }}{% endblock title %}
+
+{% block content %}
+<div class="container" style="padding-top: 50px;">
+<div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Banking System</h1>
+        <hr>
+        <p class="lead text-muted">Click on create a bank account to open a new account if you are a new member, click on load  account detàils if you have already register, you can contact the admin at the contact page to know more about getting student loan and many more! .Together we build a greater future, together we build a greater tomorrow!</p>
+        <p>
+          <a class="btn btn-primary btn-md" href="{% url 'accounts:login' %}" role="button">Load Account Details</a>
+          <a class="btn btn-success btn-md" href="{% url 'accounts:register' %}" role="button">Create a Bank Account</a>
+        </p>
+      </div>
+</div>
+</div>
+
+{% endblock content %}
